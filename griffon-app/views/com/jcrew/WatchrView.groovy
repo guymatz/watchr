@@ -20,6 +20,8 @@ class WatchrView {
                 gridLayout(rows: 2, cols: 1)
                 label(id: 'clickLabel', text: bind { model.clickCount },
                      horizontalAlignment: SwingConstants.CENTER)
+                label(id: 'nameLabel', text: bind { model.sshUserName },
+                     horizontalAlignment: SwingConstants.RIGHT)
                 button(id: 'clickButton', clickAction)
             }
         }
